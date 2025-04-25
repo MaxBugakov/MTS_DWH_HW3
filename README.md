@@ -143,7 +143,7 @@ vim ~/apache-hive-4.0.0-alpha-2-bin/conf/hive-site.xml
 
 Редакторирование 
 ```bash
- vim ~/.profile 
+vim ~/.profile 
 ```
 ---
 Добавить следующие строчки
@@ -156,7 +156,7 @@ export PATH=$PATH:$HIVE_HOME/bin
 ---
 Выолнить
 ```bash
- source ~/.profile 
+source ~/.profile 
 ```
 
 ---
@@ -173,7 +173,7 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 
 Старт 
 ```bash
- cd ~/apache-hive-4.0.0-alpha-2-bin 
+cd ~/apache-hive-4.0.0-alpha-2-bin 
 bin/schematool -dbType postgres -initSchema
 ```
 
@@ -236,13 +236,11 @@ USE test2;
 ## 4. Загрузка данных и проверка
 
 ```sql
-## Загрузка данных из HDFS
+# Загрузка данных из HDFS
 LOAD DATA INPATH '/test/pairs.tsv' INTO TABLE test2.fruit_colors;
 
-## Вывод двнных![image](https://github.com/user-attachments/assets/1a5ddf96-db07-48a3-9f81-8b54a2f60437)
-![image](https://github.com/user-attachments/assets/8bdc765c-a7ef-431b-8582-0f8f1d494653)
-![image](https://github.com/user-attachments/assets/ddd0076a-d7d4-4ad3-91f8-4fa6b8dae5d1)
-
+# Вывод двнных!
+```sql
 SELECT * FROM test2.fruit_colors LIMIT 5;
 ```
 
