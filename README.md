@@ -245,14 +245,7 @@ SELECT * FROM test2.fruit_colors LIMIT 5;
 ```
 
 **Результат:**
-
-| fruit  | color  |
-|--------|--------|
-| apple  | red    |
-| banana | yellow |
-| grape  | purple |
-| melon  | green  |
-| pear   | green  |
+![Данные](Снимок экрана 2025-04-25 225140.png)
 
 ---
 
