@@ -135,7 +135,7 @@ vim ~/apache-hive-4.0.0-alpha-2-bin/conf/hive-site.xml
     </property> 
     <property> 
         <name>javax.jdo.option.ConnectionPassword</name> 
-        <value>hiveMegaPass</value> 
+        <value>123123</value> 
     </property> 
 </configuration> 
 ```
