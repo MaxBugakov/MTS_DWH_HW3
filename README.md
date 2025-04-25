@@ -1,5 +1,7 @@
 # ДЗ 3 - Развертывание и загрузка данных в Hive
+
 Бугаков Максим БПИ226
+
 ---
 ### 1. Подключение к серверу
 
@@ -27,7 +29,7 @@ sudo -i -u postgres
 
 ### 4. Инициализация БД
 
-Подключается К БД
+Подключается к БД
 ```bash
 psql
 ```
@@ -76,7 +78,7 @@ sudo systemctl status postgresql
 ```
 --- 
 
-### 6. Установка Postgres на JN 
+### 6. Установка Postgres клиента на JN 
 ```bash
 ssh tmpl-jn
 sudo -i -u hadoop
@@ -245,7 +247,8 @@ SELECT * FROM test2.fruit_colors LIMIT 5;
 ```
 
 **Результат:**
-![Данные](Снимок экрана 2025-04-25 225140.png)
+
+![Снимок экрана 2025-04-25 225140.png](https://github.com/MaxBugakov/MTS_DWH_HW3/blob/main/Снимок%20экрана%202025-04-25%20225140.png)
 
 ---
 
