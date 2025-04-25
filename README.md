@@ -170,7 +170,7 @@ hdfs dfs -chmod g+w /tmp
 hdfs dfs -chmod g+w /user/hive/warehouse
 ```
 ---
-### 8. Запуск Hive
+### 9. Запуск Hive
 
 Старт 
 ```bash
@@ -191,7 +191,7 @@ nohup hive --service hiveserver2   --hiveconf hive.server2.enable.doAs=false   -
 ```
 
 ---
-### 9. Загрузка данных в Hive
+### 10. Загрузка данных в Hive
 
 1. Генерация локального TSV-файла
 ```bash
@@ -234,7 +234,7 @@ USE test2;
 
 ---
 
-## 4. Загрузка данных и проверка
+### 11. Загрузка данных и проверка
 
 ```sql
 # Загрузка данных из HDFS
